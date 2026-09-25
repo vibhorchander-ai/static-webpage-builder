@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Webpage Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="panel controls-panel">
+        <h1>Static Webpage Builder</h1>
+
+        <label>
+          Site name
+          <input id="siteName" type="text" value="Northstar Studio" />
+        </label>
+
+        <label>
+          Hero heading
+          <input id="heroTitle" type="text" value="Build bold ideas into beautiful pages" />
+        </label>
+
+        <label>
+          Hero text
+          <textarea id="heroText" rows="4">Design launch-ready websites with a faster, clearer workflow.</textarea>
+        </label>
+
+        <label>
+          CTA text
+          <input id="ctaText" type="text" value="Start your project" />
+        </label>
+
+        <label>
+          Accent color
+          <input id="accentColor" type="color" value="#7c3aed" />
+        </label>
+      </aside>
+
+      <main class="panel preview-panel">
+        <div class="browser-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span id="browserTitle">Northstar Studio</span>
+        </div>
+
+        <section class="hero" id="previewCard">
+          <div class="hero-copy">
+            <p class="eyebrow">Creative digital studio</p>
+            <h2 id="previewTitle">Build bold ideas into beautiful pages</h2>
+            <p id="previewText">
+              Design launch-ready websites with a faster, clearer workflow.
+            </p>
+            <button id="previewButton">Start your project</button>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="card card-lg"></div>
+            <div class="card card-md"></div>
+            <div class="card card-sm"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
