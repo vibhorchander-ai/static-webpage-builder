@@ -3,66 +3,544 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Static Webpage Builder</title>
+    <meta
+      name="description"
+      content="Portfolio of Vibhor Chander, a Software Engineer with 10 years of experience in enterprise integration, APIs, cloud solutions, and AI-powered applications."
+    />
+    <meta
+      property="og:title"
+      content="Vibhor Chander | Software Engineer | Integration & GenAI Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Engineering portfolio focused on enterprise integration, API engineering, cloud platforms, and Generative AI."
+    />
+    <title>Vibhor Chander | Software Engineer | Integration & GenAI Engineer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app-shell">
-      <aside class="panel controls-panel">
-        <h1>Static Webpage Builder</h1>
+    <header class="topbar">
+      <nav class="container nav" aria-label="Main navigation">
+        <a href="#home" class="brand">Vibhor Chander</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#impact">Impact</a>
+          <a href="#projects">GenAI Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
+        </div>
+      </nav>
+    </header>
 
-        <label>
-          Site name
-          <input id="siteName" type="text" value="Northstar Studio" />
-        </label>
-
-        <label>
-          Hero heading
-          <input id="heroTitle" type="text" value="Build bold ideas into beautiful pages" />
-        </label>
-
-        <label>
-          Hero text
-          <textarea id="heroText" rows="4">Design launch-ready websites with a faster, clearer workflow.</textarea>
-        </label>
-
-        <label>
-          CTA text
-          <input id="ctaText" type="text" value="Start your project" />
-        </label>
-
-        <label>
-          Accent color
-          <input id="accentColor" type="color" value="#7c3aed" />
-        </label>
-      </aside>
-
-      <main class="panel preview-panel">
-        <div class="browser-bar">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-          <span id="browserTitle">Northstar Studio</span>
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer | Integration &amp; GenAI Engineer</p>
+          <h1>Vibhor Chander</h1>
+          <p class="summary">
+            "Software Engineer with 10 years of experience building enterprise integrations,
+            APIs, cloud solutions, and AI-powered applications — with expertise spanning
+            MuleSoft, Apigee, Azure, and Generative AI."
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Work</a>
+            <a class="btn btn-secondary" href="#experience">Career Journey</a>
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/vibhorchander-ai"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+          <div class="hero-tags" aria-label="Core focus areas">
+            <span>APIs</span>
+            <span>Integration</span>
+            <span>Cloud</span>
+            <span>AI</span>
+          </div>
         </div>
 
-        <section class="hero" id="previewCard">
-          <div class="hero-copy">
-            <p class="eyebrow">Creative digital studio</p>
-            <h2 id="previewTitle">Build bold ideas into beautiful pages</h2>
-            <p id="previewText">
-              Design launch-ready websites with a faster, clearer workflow.
-            </p>
-            <button id="previewButton">Start your project</button>
+        <div class="hero-panel" aria-label="Career progression summary">
+          <div class="mini-card">
+            <span>Career Path</span>
+            <strong>Software Engineering → Integration → Cloud → AI</strong>
           </div>
+          <div class="mini-card">
+            <span>Focus</span>
+            <strong>MuleSoft, Apigee, Azure, GenAI</strong>
+          </div>
+          <div class="mini-card">
+            <span>Impact</span>
+            <strong>10+ interfaces migrated</strong>
+          </div>
+        </div>
+      </section>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="card card-lg"></div>
-            <div class="card card-md"></div>
-            <div class="card card-sm"></div>
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">About Me</p>
+          <h2>Engineering journey across integration, APIs, cloud, and AI</h2>
+        </div>
+        <div class="about-grid">
+          <div class="story-card">
+            <p>
+              Over 10 years in software engineering, with a strong foundation in enterprise
+              integration and API-led connectivity. My work has evolved from building interfaces
+              and services to architecting cloud-enabled, API-rich solutions and exploring
+              Generative AI and AI agents.
+            </p>
           </div>
-        </section>
-      </main>
-    </div>
+          <div class="story-card timeline-flow">
+            <div><span>10 Years</span><small>Software Engineering</small></div>
+            <div class="arrow">↓</div>
+            <div><span>Enterprise Integration</span><small>MuleSoft</small></div>
+            <div class="arrow">↓</div>
+            <div><span>Apigee &amp; API Engineering</span><small>OAuth, JWT, OAS</small></div>
+            <div class="arrow">↓</div>
+            <div><span>Azure &amp; Cloud</span><small>API Security &amp; Platforms</small></div>
+            <div class="arrow">↓</div>
+            <div><span>Machine Learning</span><small>AI Foundations</small></div>
+            <div class="arrow">↓</div>
+            <div><span>Generative AI</span><small>AI Agents</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Engineering Expertise</p>
+            <h2>Core areas of delivery</h2>
+          </div>
+          <div class="expertise-grid">
+            <article class="expertise-card">
+              <h3>API &amp; Integration</h3>
+              <ul>
+                <li>APIGEE</li>
+                <li>MuleSoft</li>
+                <li>Azure Integration Services</li>
+                <li>REST APIs</li>
+                <li>API-led connectivity</li>
+                <li>OpenAPI Specification</li>
+                <li>Microservices</li>
+              </ul>
+            </article>
+            <article class="expertise-card">
+              <h3>Cloud &amp; Platform</h3>
+              <ul>
+                <li>Azure</li>
+                <li>Azure Container</li>
+                <li>Nginx</li>
+                <li>Power Platform</li>
+                <li>Cloud integration design</li>
+              </ul>
+            </article>
+            <article class="expertise-card">
+              <h3>Software Engineering</h3>
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>Spring MVC</li>
+                <li>Spring Boot</li>
+              </ul>
+            </article>
+            <article class="expertise-card">
+              <h3>AI / Machine Learning</h3>
+              <ul>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>OCR</li>
+                <li>Conversational AI</li>
+                <li>Azure AI Foundry</li>
+              </ul>
+            </article>
+            <article class="expertise-card">
+              <h3>Generative AI</h3>
+              <ul>
+                <li>Microsoft Copilot Studio</li>
+                <li>AI Agents</li>
+                <li>Natural Language Processing</li>
+                <li>Conversational automation</li>
+              </ul>
+            </article>
+            <article class="expertise-card">
+              <h3>API Security</h3>
+              <ul>
+                <li>OAuth 2.0</li>
+                <li>JWT verification</li>
+                <li>Basic security policies</li>
+                <li>OAuth security policies</li>
+              </ul>
+            </article>
+            <article class="expertise-card">
+              <h3>Frontend / Application</h3>
+              <ul>
+                <li>React.js</li>
+                <li>Responsive interfaces</li>
+                <li>UI integration</li>
+                <li>Frontend enablement</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Engineering Impact</p>
+          <h2>Measured outcomes and delivery focus</h2>
+        </div>
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="metric">10+</div>
+            <p>Interfaces migrated from MuleSoft to Apigee</p>
+          </div>
+          <div class="impact-card">
+            <div class="metric">200ms → 100ms</div>
+            <p>Average API latency reduction</p>
+          </div>
+          <div class="impact-card">
+            <div class="metric">4</div>
+            <p>Team members supervised and trained at Deloitte</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">GenAI Projects</p>
+            <h2>Public-safe, concept-driven Generative AI work</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card feature-project">
+              <span class="project-tag">Featured Case Study</span>
+              <h3>MuleSoft → Apigee Migration</h3>
+              <p>
+                Migrated over 10 enterprise interfaces from MuleSoft to Apigee, developed OAS
+                documentation, implemented OAuth 2.0 and JWT verification, created custom
+                JavaScript components, and reduced average API latency from 200ms to 100ms.
+              </p>
+              <div class="concept-flow" aria-label="Migration journey">
+                <span>MuleSoft</span>
+                <span>→</span>
+                <span>Migration Strategy</span>
+                <span>→</span>
+                <span>Apigee</span>
+                <span>→</span>
+                <span>OpenAPI Specification</span>
+                <span>→</span>
+                <span>OAuth 2.0 / JWT</span>
+                <span>→</span>
+                <span>Performance Optimization</span>
+              </div>
+              <ul>
+                <li>10+ Interfaces Migrated</li>
+                <li>200ms → 100ms API Latency</li>
+                <li>OAuth 2.0</li>
+                <li>JWT Verification</li>
+                <li>OpenAPI Specification</li>
+                <li>Custom JavaScript Components</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">GenAI Project</span>
+              <h3>Data Extraction Agent</h3>
+              <p>
+                Built a GenAI-powered data extraction solution combining OCR and conversational
+                capabilities. The solution uses a React.js-based interface with Azure AI Foundry and
+                Azure Container technologies to enable document information extraction and
+                conversational interaction with extracted content.
+              </p>
+              <div class="concept-flow small" aria-label="Data extraction workflow">
+                <span>Document</span>
+                <span>→</span>
+                <span>OCR</span>
+                <span>→</span>
+                <span>AI Processing</span>
+                <span>→</span>
+                <span>Information Extraction</span>
+                <span>→</span>
+                <span>Conversational Interface</span>
+              </div>
+              <ul>
+                <li>React.js</li>
+                <li>Nginx</li>
+                <li>Azure AI Foundry</li>
+                <li>Azure Container</li>
+                <li>OCR</li>
+                <li>Conversational AI</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">GenAI Project</span>
+              <h3>GSSR Bot</h3>
+              <p>
+                Developed a conversational bot using Microsoft Copilot Studio that converts
+                natural-language questions into structured queries and integrates with Power
+                Platform to retrieve relevant information.
+              </p>
+              <div class="concept-flow small" aria-label="Bot workflow">
+                <span>User</span>
+                <span>→</span>
+                <span>Microsoft Copilot Studio</span>
+                <span>→</span>
+                <span>Natural Language Understanding</span>
+                <span>→</span>
+                <span>Query Generation</span>
+                <span>→</span>
+                <span>Power Platform</span>
+                <span>→</span>
+                <span>Response</span>
+              </div>
+              <ul>
+                <li>Microsoft Copilot Studio</li>
+                <li>Power Platform</li>
+                <li>Natural Language Processing</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Current Company</span>
+              <h3>GenAI Enablement for Enterprise Workflows</h3>
+              <p>
+                Worked on public-safe GenAI enablement scenarios focused on enterprise workflow
+                improvement, conversational automation, and structured knowledge access while
+                keeping the solution aligned with secure and responsible usage patterns.
+              </p>
+              <div class="concept-flow small" aria-label="GenAI workflow">
+                <span>Idea</span>
+                <span>→</span>
+                <span>Knowledge Access</span>
+                <span>→</span>
+                <span>LLM Assistant</span>
+                <span>→</span>
+                <span>Workflow Support</span>
+                <span>→</span>
+                <span>Decision Support</span>
+              </div>
+              <ul>
+                <li>GenAI</li>
+                <li>Conversational AI</li>
+                <li>Enterprise enablement</li>
+                <li>Workflow automation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Professional Experience</p>
+          <h2>Career timeline</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="row-head">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p>Shell India Markets Pvt Ltd</p>
+                </div>
+                <span>Bangalore · Nov 2023 – Present</span>
+              </div>
+              <ul>
+                <li>Led the migration of over 10 interfaces from MuleSoft to Apigee.</li>
+                <li>Developed OpenAPI Specification documents for newly created and migrated APIs.</li>
+                <li>Implemented OAuth 2.0 and JWT verification for secure, trusted access.</li>
+                <li>Built custom JavaScript components to extend Apigee capabilities.</li>
+                <li>Reduced average API latency from 200ms to 100ms.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="row-head">
+                <div>
+                  <h3>Senior Technical Specialist</h3>
+                  <p>Coforge SF Ltd</p>
+                </div>
+                <span>Hyderabad · Dec 2019 – Oct 2023</span>
+              </div>
+              <ul>
+                <li>Led a team to streamline and reorganize a legacy project using MuleSoft.</li>
+                <li>Built microservices using MuleSoft.</li>
+                <li>Developed API-led connectivity between SAP, Salesforce, Workday, and AzureDB.</li>
+                <li>Contributed to REST API best practices and unit testing standards.</li>
+              </ul>
+              <div class="award-list">
+                <span>Spark Award</span>
+                <span>Star of the Month</span>
+                <span>Award of Excellence</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="row-head">
+                <div>
+                  <h3>Business Technology Consultant</h3>
+                  <p>Deloitte Consulting India Pvt Ltd</p>
+                </div>
+                <span>Hyderabad · Oct 2018 – Nov 2019</span>
+              </div>
+              <ul>
+                <li>Supervised and trained a four-member team on MuleSoft.</li>
+                <li>Developed integration interfaces for Salesforce Commerce Cloud, Amazon S3, and IBM Order Management System.</li>
+                <li>Implemented Basic and OAuth security policies.</li>
+              </ul>
+              <div class="award-list">
+                <span>Outstanding Award</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="row-head">
+                <div>
+                  <h3>Associate Software Engineer</h3>
+                  <p>Prolifics Corporation Ltd</p>
+                </div>
+                <span>Hyderabad · Jul 2016 – Sep 2018</span>
+              </div>
+              <ul>
+                <li>Developed reports and code modules using Java, Spring MVC, and Jasper Reports.</li>
+                <li>Designed and implemented interfaces using Mule ESB and Anypoint Studio.</li>
+              </ul>
+              <div class="award-list">
+                <span>RACE Award</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Certifications</p>
+            <h2>Verified learning and platform capability</h2>
+          </div>
+          <div class="cert-grid">
+            <article class="cert-card">
+              <span class="cert-code">GH-300</span>
+              <h3>GitHub Copilot Certification</h3>
+            </article>
+            <article class="cert-card">
+              <span class="cert-code">AI-900</span>
+              <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+            </article>
+            <article class="cert-card">
+              <span class="cert-code">DP-900</span>
+              <h3>Microsoft Certified: Azure Data Fundamentals</h3>
+            </article>
+            <article class="cert-card">
+              <span class="cert-code">AZ-900</span>
+              <h3>Microsoft Certified: Azure Fundamentals</h3>
+            </article>
+            <article class="cert-card">
+              <span class="cert-code">Mule 4</span>
+              <h3>MuleSoft Certified Developer — Level 1</h3>
+            </article>
+            <article class="cert-card">
+              <span class="cert-code">Mule 4</span>
+              <h3>MuleSoft Certified Developer — Level 2</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Recognition &amp; Awards</p>
+          <h2>Professional recognition</h2>
+        </div>
+        <div class="award-grid">
+          <article class="award-card">
+            <span class="award-badge">Enableathon Hackathon</span>
+            <h3>Special Recognition Award</h3>
+            <p>
+              Developed an AI-powered agent using Microsoft Copilot Studio to improve
+              accessibility and inclusivity for neurodivergent individuals and people with
+              disabilities.
+            </p>
+          </article>
+          <article class="award-card">
+            <span class="award-badge">Delivery Optimization</span>
+            <h3>Best Performance Award</h3>
+            <p>
+              Developed a machine-learning model aimed at optimizing the delivery of lubricant
+              backorders and supporting better delivery decision-making.
+            </p>
+          </article>
+          <article class="award-card">
+            <span class="award-badge">Coforge</span>
+            <h3>Professional Recognition</h3>
+            <p>Spark Award · Star of the Month · Award of Excellence</p>
+          </article>
+          <article class="award-card">
+            <span class="award-badge">Deloitte</span>
+            <h3>Outstanding Award</h3>
+            <p>Recognized for on-time, defect-free project delivery.</p>
+          </article>
+          <article class="award-card">
+            <span class="award-badge">Prolifics</span>
+            <h3>RACE Award</h3>
+            <p>Acknowledged for outstanding performance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Education</p>
+            <h2>Academic background</h2>
+          </div>
+          <div class="education-grid">
+            <article class="edu-card">
+              <h3>MTech: Artificial Intelligence</h3>
+              <p>Indian Institute of Technology, Jodhpur</p>
+              <small>Dec 2019 – Dec 2023</small>
+            </article>
+            <article class="edu-card">
+              <h3>BTech: Computer Science and Engineering</h3>
+              <p>Kurukshetra University, Kurukshetra</p>
+              <small>Jul 2012 – Jun 2016</small>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Vibhor Chander</p>
+        <p>Software Engineer | Integration &amp; GenAI Engineer</p>
+        <a href="https://github.com/vibhorchander-ai" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
